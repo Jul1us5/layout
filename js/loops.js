@@ -8,7 +8,7 @@ let num = 0
 // while (num < 5) {
 //     console.log(num);
 //     num++;
-// } 
+// }
 // ^-- Iteracija
 
 // do while tikrina reikšmę po kiekvienos operacijos
@@ -16,26 +16,28 @@ let num = 0
 // do {
 //     console.log(num);
 //     num++;
-// } while (num < 5); 
+// } while (num < 0);
 
 
 // For ciklas: steps ir tikrina reikšmę prieš operaciją | Papilomi nustatymai
 let num2 = ['1', '2'];
 
 
-// 1              // 2    // 4
+// 1              // 2         // 4
 for (let i = 0; i < num2.length; i++) {
 
     // 3
-    //  console.log(num2[i]);
+    //   console.log(num2[i]);
 }
 
 // Direktyva:
 // break - Jei true sustabdo.
 // continue - Jei true praleidžia.
 
-for (let i = 0; i < 7; i++) {
-    if (i == 4) break;
+for (let i = 0; i < 10; i++) {
+    if (i == 6) {
+        continue;
+    }
     //  console.log(i);
 }
 
@@ -49,10 +51,8 @@ const area = [
 
 
 for (let i = 0; i < area.length; i++) {
-
-    let size = area[i]
+    let size = area[i];
     for (let x = 0; x < size.length; x++) {
-        //   console.log(size[x]);
-
+        console.log(size[x]);
     }
 }
